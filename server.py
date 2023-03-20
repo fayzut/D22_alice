@@ -128,5 +128,10 @@ def get_suggests(user_id):
     return suggests
 
 
+@app.route('/', methods=['GET'])
+def get_simple():
+    return "Вы в проекте D22_alice от Файзута"
+
+
 if __name__ == '__main__':
     app.run()
